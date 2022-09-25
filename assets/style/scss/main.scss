@@ -39,7 +39,7 @@ input {
 
 
 .container {
-    max-width: 1220px;
+    max-width: 1230px;
 }
 
 .nav {
@@ -435,6 +435,7 @@ input {
             align-items: center;
             justify-content: space-between;
             padding: 4px;
+            font-family: DM_Sans, sans-serif;
             &:first-child {
                 margin-right: 42px;
             }
@@ -528,6 +529,165 @@ input {
             border-radius: 20px;
             cursor: pointer;
         }
+    }
+}
+
+.title {
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: 19px;
+    }
+    &__link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.suggestions {
+    &-card {
+        width: 100%;
+        padding: 17px 24px 24px 24px;
+        background: $white;
+        box-shadow: 0px 0px 29px rgba(119, 124, 139, 0.1);
+        border-radius: 16px;
+        margin-top: 26px;
+        transition: .3s all;
+        .percentage {
+            width: 64px;
+            height: 24px;
+            border-radius: 10px;
+            background-color: #FFDC61;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        svg {
+            cursor: pointer;
+        }
+        &-photo {
+            width: 100%;
+            height: 200px;
+            margin: 9px 0 20px;
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+            }
+        }
+        .art {
+            font-size: 12px;
+            font-weight: 400;
+            color: #0008;
+        }
+        &__link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 8px 0 20px;
+            display: block;
+            &:hover {
+                color: $gray-dark
+            }
+        }
+        del {
+            font-weight: 500;
+            color: #B9B9B9;
+            line-height: 20px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        .basket {
+            width: 60px;
+            height: 48px;
+            border-radius: 16px;
+            background: $red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg path {
+                fill: $white;
+            }
+        }
+        &:hover {
+            transform: translateY(-10px)
+        }
+    }
+
+}
+
+.news {
+    margin: 55px 0;
+    &-item {
+        overflow: scroll;
+        display: flex;
+        &::-webkit-scrollbar {
+           width: 0;
+           height: 0;
+        }
+        &__img {
+            width: 390px;
+            height: 223px;
+            border-radius: 16px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 16px;
+            margin-top: 20px;
+            transition: .3s all;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                transform: translateY(-10px)
+            }
+        }
+    }
+}
+// End news
+
+.tips {
+    &-row {
+        background: $white;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+    &-item {
+        padding: 55px 15px 55px 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: -35px;
+        }
+        &__link {
+            color: $red;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 458px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 16px;
     }
 }
 

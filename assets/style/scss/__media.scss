@@ -43,6 +43,29 @@
     }
 }
 
+@media (max-width: 992px) {
+    .tips {
+        &-row {
+            background: $white;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+        &-item {
+            padding: 28px;
+            height: auto;
+            &__title {
+                line-height: 32px;
+            }
+            &__text {
+                margin: 14px 0 25px;
+            }
+        }
+        &__img {
+          height: 300px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         &-logo {
@@ -76,6 +99,7 @@
     }
     
     .wrapper {
+        padding: 19px 0 31px;
         &-item {
             &-search-box {
                 width: 100%;
@@ -97,6 +121,105 @@
             .selection {
                 width: 100%;
             }
+        }
+    }
+
+    .title {
+        &__text {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+    .suggestions {
+        &-card {
+            padding: 10px;
+            .percentage {
+                width: 39px;
+                height: 15px;
+                justify-content: center;
+                font-size: 8px;
+            }
+            svg {
+                width: 17px;
+            }
+            &-photo {
+                width: 100%;
+                height: 90px;
+                margin: 6px 0 11px;
+            }
+            .art {
+                display: none;
+            }
+            &__link {
+                font-size: 10px;
+                line-height: 14px;
+                margin: 0px 0 16px;
+                display: block;
+                &:hover {
+                    color: $gray-dark
+                }
+            }
+            del {
+               font-size: 10px;
+               line-height: 16px;
+            }
+            .price {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .basket {
+                width: 100%;
+                margin-top: 13px;
+                height: 33px;
+                border-radius: 10px;
+                &__text {
+                    font-size: 10px;
+                    font-weight: 700;
+                    margin-left: 10px;
+                    color: $white;
+                }
+            }
+            &:hover {
+                transform: translateY(-10px)
+            }
+        }
+    
+    }
+
+    .news {
+        margin: 30px 0;
+        &-item {
+            &__img {
+                width: 303px;
+                height: 168px;
+                border-radius: 16px;
+                margin-right: 12px;
+                margin-top: 17px;
+            }
+        }
+    }
+    // End news
+
+    
+    .tips {
+        &-row {
+            background: $white;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+        &-item {
+            padding: 28px;
+            height: auto;
+            &__title {
+                line-height: 32px;
+            }
+            &__text {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        &__img {
+          height: 204px;
         }
     }
 }
