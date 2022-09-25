@@ -26,11 +26,11 @@
                         <li class="nav-list"><a href="#" class="nav-list__link">О компании</a></li>
                         <li class="nav-list"><a href="#" class="nav-list__link">Контакты</a></li>
                         <li class="nav-list"><a href="#" class="nav-list__link">Доставка и оплата</a></li>
-                        <li class="nav-list"><span class="me-1">Еще</span>
+                        <li class="nav-list  more-info"><span class="me-1">Еще</span>
                             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
                             </svg>
-                            <ul class="more">
+                            <ul class="more d-none">
                                 <li class="more-list"><a href="#" class="more-list__link">О компании</a></li>
                                 <li class="more-list"><a href="#" class="more-list__link">Контакты</a></li>
                                 <li class="more-list"><a href="#" class="more-list__link">Доставка и оплата</a></li>
@@ -51,27 +51,29 @@
                         <img src="assets/img/png/logo.png" alt="logo">
                         <span class="header-logo__text d-none d-xl-inline-block">wili</span>
                     </a>
-                    <div class="header-search d-none d-md-flex">
-                        <input type="text" class="header-search__inp" placeholder="Поиск по сайту">
-                        <svg class="search__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3.63867C6.58172 3.63867 3 7.13408 3 11.4459C3 15.7577 6.58172 19.2531 11 19.2531C15.4183 19.2531 19 15.7577 19 11.4459C19 7.13408 15.4183 3.63867 11 3.63867ZM11 5.59048C14.3137 5.59048 17 8.21203 17 11.4459C17 14.6797 14.3137 17.3013 11 17.3013C7.68629 17.3013 5 14.6797 5 11.4459C5 8.21203 7.68629 5.59048 11 5.59048Z" fill="#AAAFBE"/>
-                            <g opacity="0.5">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2926 15.6392C15.6529 15.2872 16.2201 15.2599 16.6125 15.5574L16.7068 15.6385L20.7068 19.5386C21.0975 19.9195 21.0978 20.5375 20.7074 20.9187C20.3471 21.2707 19.7799 21.298 19.3875 21.0005L19.2932 20.9194L15.2932 17.0193C14.9025 16.6384 14.9022 16.0205 15.2926 15.6392Z" fill="#AAAFBE"/>
-                            </g>
-                        </svg>
-                        <div class="catalog">
-                           <div class="catalog-item">
-                             <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.94935 3.6626H8.18377C9.62337 3.6626 10.7903 4.88593 10.7903 6.39505V8.73735C10.7903 10.2459 9.62319 11.4698 8.18377 11.4698H5.94935C4.50994 11.4698 3.34277 10.2459 3.34277 8.73735V6.39505C3.34277 4.88593 4.50975 3.6626 5.94935 3.6626ZM8.18377 5.6144H5.94935C5.53805 5.6144 5.20467 5.96388 5.20467 6.39504V8.73735C5.20467 9.1681 5.53835 9.51801 5.94935 9.51801H8.18377C8.59477 9.51801 8.92845 9.16811 8.92845 8.73735V6.39504C8.92845 5.96388 8.59507 5.6144 8.18377 5.6144ZM5.94935 13.4216H8.18377C9.62355 13.4216 10.7903 14.6451 10.7903 16.1549V18.4964C10.7903 20.0055 9.62336 21.2288 8.18377 21.2288H5.94935C4.50977 21.2288 3.34277 20.0055 3.34277 18.4964V16.1549C3.34277 14.6451 4.50957 13.4216 5.94935 13.4216ZM8.18377 15.3734H5.94935C5.538 15.3734 5.20467 15.723 5.20467 16.1549V18.4964C5.20467 18.9276 5.53805 19.277 5.94935 19.277H8.18377C8.59507 19.277 8.92845 18.9276 8.92845 18.4964V16.1549C8.92845 15.723 8.59513 15.3734 8.18377 15.3734ZM17.4939 13.4216H15.2588C13.819 13.4216 12.6522 14.6451 12.6522 16.1549V18.4964C12.6522 20.0055 13.8192 21.2288 15.2588 21.2288H17.4939C18.933 21.2288 20.0998 20.0053 20.0998 18.4964V16.1549C20.0998 14.6453 18.9332 13.4216 17.4939 13.4216ZM15.2588 15.3734H17.4939C17.9046 15.3734 18.2379 15.723 18.2379 16.1549V18.4964C18.2379 18.9275 17.9046 19.277 17.4939 19.277H15.2588C14.8475 19.277 14.5141 18.9275 14.5141 18.4964V16.1549C14.5141 15.723 14.8475 15.3734 15.2588 15.3734Z" fill="white"/>
-                            <g opacity="0.5">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.494 3.6626H15.2589C13.8193 3.6626 12.6523 4.88594 12.6523 6.39505V8.73735C12.6523 10.2459 13.8195 11.4698 15.2589 11.4698H17.494C18.9329 11.4698 20.0999 10.2457 20.0999 8.73735V6.39505C20.0999 4.88611 18.9331 3.6626 17.494 3.6626ZM15.2589 5.6144H17.494C17.9047 5.6144 18.238 5.96394 18.238 6.39504V8.73735C18.238 9.16805 17.9044 9.51801 17.494 9.51801H15.2589C14.8479 9.51801 14.5142 9.1681 14.5142 8.73735V6.39504C14.5142 5.96389 14.8476 5.6144 15.2589 5.6144Z" fill="white"/>
-                            </g>
-                        </svg>
-                       <span class="catalog-item__text"> Каталог</span>
-                    </div>
+                    <div class="position-relative">
+                        <div class="header-search d-none d-md-flex">
+                            <input type="text" class="header-search__inp" placeholder="Поиск по сайту">
+                            <svg class="search__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3.63867C6.58172 3.63867 3 7.13408 3 11.4459C3 15.7577 6.58172 19.2531 11 19.2531C15.4183 19.2531 19 15.7577 19 11.4459C19 7.13408 15.4183 3.63867 11 3.63867ZM11 5.59048C14.3137 5.59048 17 8.21203 17 11.4459C17 14.6797 14.3137 17.3013 11 17.3013C7.68629 17.3013 5 14.6797 5 11.4459C5 8.21203 7.68629 5.59048 11 5.59048Z" fill="#AAAFBE"/>
+                                <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2926 15.6392C15.6529 15.2872 16.2201 15.2599 16.6125 15.5574L16.7068 15.6385L20.7068 19.5386C21.0975 19.9195 21.0978 20.5375 20.7074 20.9187C20.3471 21.2707 19.7799 21.298 19.3875 21.0005L19.2932 20.9194L15.2932 17.0193C14.9025 16.6384 14.9022 16.0205 15.2926 15.6392Z" fill="#AAAFBE"/>
+                                </g>
+                            </svg>
+                            <div class="catalog">
+                               <div class="catalog-item">
+                                 <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.94935 3.6626H8.18377C9.62337 3.6626 10.7903 4.88593 10.7903 6.39505V8.73735C10.7903 10.2459 9.62319 11.4698 8.18377 11.4698H5.94935C4.50994 11.4698 3.34277 10.2459 3.34277 8.73735V6.39505C3.34277 4.88593 4.50975 3.6626 5.94935 3.6626ZM8.18377 5.6144H5.94935C5.53805 5.6144 5.20467 5.96388 5.20467 6.39504V8.73735C5.20467 9.1681 5.53835 9.51801 5.94935 9.51801H8.18377C8.59477 9.51801 8.92845 9.16811 8.92845 8.73735V6.39504C8.92845 5.96388 8.59507 5.6144 8.18377 5.6144ZM5.94935 13.4216H8.18377C9.62355 13.4216 10.7903 14.6451 10.7903 16.1549V18.4964C10.7903 20.0055 9.62336 21.2288 8.18377 21.2288H5.94935C4.50977 21.2288 3.34277 20.0055 3.34277 18.4964V16.1549C3.34277 14.6451 4.50957 13.4216 5.94935 13.4216ZM8.18377 15.3734H5.94935C5.538 15.3734 5.20467 15.723 5.20467 16.1549V18.4964C5.20467 18.9276 5.53805 19.277 5.94935 19.277H8.18377C8.59507 19.277 8.92845 18.9276 8.92845 18.4964V16.1549C8.92845 15.723 8.59513 15.3734 8.18377 15.3734ZM17.4939 13.4216H15.2588C13.819 13.4216 12.6522 14.6451 12.6522 16.1549V18.4964C12.6522 20.0055 13.8192 21.2288 15.2588 21.2288H17.4939C18.933 21.2288 20.0998 20.0053 20.0998 18.4964V16.1549C20.0998 14.6453 18.9332 13.4216 17.4939 13.4216ZM15.2588 15.3734H17.4939C17.9046 15.3734 18.2379 15.723 18.2379 16.1549V18.4964C18.2379 18.9275 17.9046 19.277 17.4939 19.277H15.2588C14.8475 19.277 14.5141 18.9275 14.5141 18.4964V16.1549C14.5141 15.723 14.8475 15.3734 15.2588 15.3734Z" fill="white"/>
+                                <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.494 3.6626H15.2589C13.8193 3.6626 12.6523 4.88594 12.6523 6.39505V8.73735C12.6523 10.2459 13.8195 11.4698 15.2589 11.4698H17.494C18.9329 11.4698 20.0999 10.2457 20.0999 8.73735V6.39505C20.0999 4.88611 18.9331 3.6626 17.494 3.6626ZM15.2589 5.6144H17.494C17.9047 5.6144 18.238 5.96394 18.238 6.39504V8.73735C18.238 9.16805 17.9044 9.51801 17.494 9.51801H15.2589C14.8479 9.51801 14.5142 9.1681 14.5142 8.73735V6.39504C14.5142 5.96389 14.8476 5.6144 15.2589 5.6144Z" fill="white"/>
+                                </g>
+                            </svg>
+                           <span class="catalog-item__text"> Каталог</span>
+                        </div>
+                            </div>
                         </div>
                         <div class="catalog-info d-none">
-                            <div class="d-flex">
+                            <div class="d-flex flex-column flex-sm-row">
                                 <a href="#" class="catalog-info-list">
                                     <img src="assets/img/png/1.png" alt="" class="catalog-info-list__img">
                                     <p class="catalog-info-list__text text-center">ШИНЫ</p>
@@ -173,14 +175,14 @@
             <li class="mobile-menu-list"><a href="#" class="mobile-menu-list__link">О компании</a></li>
             <li class="mobile-menu-list"><a href="#" class="mobile-menu-list__link">Контакты</a></li>
             <li class="mobile-menu-list"><a href="#" class="mobile-menu-list__link">Доставка и оплата</a></li>
-            <li class="mobile-menu-list"><span class="me-1">Еще</span>
+            <li class="mobile-menu-list more-info-mob"><span class="me-1">Еще</span>
                 <svg width="16" height="12" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#fff"/>
                 </svg>
-                <ul class="more d-none">
-                    <li class="more-list"><a href="#" class="more-list__link">О компании</a></li>
-                    <li class="more-list"><a href="#" class="more-list__link">Контакты</a></li>
-                    <li class="more-list"><a href="#" class="more-list__link">Доставка и оплата</a></li>
+                <ul class="more-mob d-none">
+                    <li class="more-list mt-3"><a href="#" class="more-list__link">О компании</a></li>
+                    <li class="more-list mt-3"><a href="#" class="more-list__link">Контакты</a></li>
+                    <li class="more-list mt-3"><a href="#" class="more-list__link">Доставка и оплата</a></li>
                 </ul>
             </li>
         </ul>
@@ -263,27 +265,36 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between flex-wrap">
-                                    <div class="selection d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="selection-icon">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.49984 18.3332H12.4998C16.6665 18.3332 18.3332 16.6665 18.3332 12.4998V7.49984C18.3332 3.33317 16.6665 1.6665 12.4998 1.6665H7.49984C3.33317 1.6665 1.6665 3.33317 1.6665 7.49984V12.4998C1.6665 16.6665 3.33317 18.3332 7.49984 18.3332Z" fill="#F2F3F5" stroke="#081420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" fill="#F2F3F5"/>
-                                                    <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" fill="#F2F3F5"/>
-                                                    <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                    <div class="selection">
+                                        <div class="selection__btn d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div class="selection-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49984 18.3332H12.4998C16.6665 18.3332 18.3332 16.6665 18.3332 12.4998V7.49984C18.3332 3.33317 16.6665 1.6665 12.4998 1.6665H7.49984C3.33317 1.6665 1.6665 3.33317 1.6665 7.49984V12.4998C1.6665 16.6665 3.33317 18.3332 7.49984 18.3332Z" fill="#F2F3F5" stroke="#081420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" fill="#F2F3F5"/>
+                                                        <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" fill="#F2F3F5"/>
+                                                        <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="">
+                                                    <p class="selection__title">Ширина, mm</p>
+                                                    <p class="selection__info">225</p>
+                                                </div>
                                             </div>
-                                            <div class="">
-                                                <p class="selection__title">Ширина, mm</p>
-                                                <p class="selection__info">225</p>
-                                            </div>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
+                                            </svg>
                                         </div>
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
-                                        </svg>
+                                        <ul class="selection-info d-none">
+                                            <li class="selection-info-list">100</li>
+                                            <li class="selection-info-list">150</li>
+                                            <li class="selection-info-list">200</li>
+                                            <li class="selection-info-list">225</li>
+                                        </ul>
                                     </div>
-                                    <div class="selection d-flex align-items-center justify-content-between">
+                                    <div class="selection">
+                                       <div class="selection__btn d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <div class="selection-icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,45 +312,68 @@
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
                                         </svg>
+                                       </div>
+                                       <ul class="selection-info d-none">
+                                           <li class="selection-info-list">10</li>
+                                           <li class="selection-info-list">15</li>
+                                           <li class="selection-info-list">20</li>
+                                           <li class="selection-info-list">25</li>
+                                       </ul>
                                     </div>
-                                    <div class="selection d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="selection-icon">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.4998 18.9582H7.49984C2.97484 18.9582 1.0415 17.0248 1.0415 12.4998V7.49984C1.0415 2.97484 2.97484 1.0415 7.49984 1.0415H12.4998C17.0248 1.0415 18.9582 2.97484 18.9582 7.49984V12.4998C18.9582 17.0248 17.0248 18.9582 12.4998 18.9582ZM7.49984 2.2915C3.65817 2.2915 2.2915 3.65817 2.2915 7.49984V12.4998C2.2915 16.3415 3.65817 17.7082 7.49984 17.7082H12.4998C16.3415 17.7082 17.7082 16.3415 17.7082 12.4998V7.49984C17.7082 3.65817 16.3415 2.2915 12.4998 2.2915H7.49984Z" fill="#081420"/>
-                                                    <path d="M4.99987 15.6249C4.84154 15.6249 4.6832 15.5665 4.5582 15.4415C4.31654 15.1999 4.31654 14.7999 4.5582 14.5582L14.5582 4.5582C14.7999 4.31654 15.1999 4.31654 15.4415 4.5582C15.6832 4.79987 15.6832 5.19987 15.4415 5.44154L5.44154 15.4415C5.31654 15.5665 5.1582 15.6249 4.99987 15.6249Z" fill="#081420"/>
-                                                    <path d="M14.9998 8.95833C14.6582 8.95833 14.3748 8.675 14.3748 8.33333V5.625H11.6665C11.3248 5.625 11.0415 5.34167 11.0415 5C11.0415 4.65833 11.3248 4.375 11.6665 4.375H14.9998C15.3415 4.375 15.6248 4.65833 15.6248 5V8.33333C15.6248 8.675 15.3415 8.95833 14.9998 8.95833Z" fill="#081420"/>
-                                                    <path d="M8.33333 15.6248H5C4.65833 15.6248 4.375 15.3415 4.375 14.9998V11.6665C4.375 11.3248 4.65833 11.0415 5 11.0415C5.34167 11.0415 5.625 11.3248 5.625 11.6665V14.3748H8.33333C8.675 14.3748 8.95833 14.6582 8.95833 14.9998C8.95833 15.3415 8.675 15.6248 8.33333 15.6248Z" fill="#081420"/>
-                                                </svg>
+                                    <div class="selection">
+                                        <div class="selection__btn d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div class="selection-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.4998 18.9582H7.49984C2.97484 18.9582 1.0415 17.0248 1.0415 12.4998V7.49984C1.0415 2.97484 2.97484 1.0415 7.49984 1.0415H12.4998C17.0248 1.0415 18.9582 2.97484 18.9582 7.49984V12.4998C18.9582 17.0248 17.0248 18.9582 12.4998 18.9582ZM7.49984 2.2915C3.65817 2.2915 2.2915 3.65817 2.2915 7.49984V12.4998C2.2915 16.3415 3.65817 17.7082 7.49984 17.7082H12.4998C16.3415 17.7082 17.7082 16.3415 17.7082 12.4998V7.49984C17.7082 3.65817 16.3415 2.2915 12.4998 2.2915H7.49984Z" fill="#081420"/>
+                                                        <path d="M4.99987 15.6249C4.84154 15.6249 4.6832 15.5665 4.5582 15.4415C4.31654 15.1999 4.31654 14.7999 4.5582 14.5582L14.5582 4.5582C14.7999 4.31654 15.1999 4.31654 15.4415 4.5582C15.6832 4.79987 15.6832 5.19987 15.4415 5.44154L5.44154 15.4415C5.31654 15.5665 5.1582 15.6249 4.99987 15.6249Z" fill="#081420"/>
+                                                        <path d="M14.9998 8.95833C14.6582 8.95833 14.3748 8.675 14.3748 8.33333V5.625H11.6665C11.3248 5.625 11.0415 5.34167 11.0415 5C11.0415 4.65833 11.3248 4.375 11.6665 4.375H14.9998C15.3415 4.375 15.6248 4.65833 15.6248 5V8.33333C15.6248 8.675 15.3415 8.95833 14.9998 8.95833Z" fill="#081420"/>
+                                                        <path d="M8.33333 15.6248H5C4.65833 15.6248 4.375 15.3415 4.375 14.9998V11.6665C4.375 11.3248 4.65833 11.0415 5 11.0415C5.34167 11.0415 5.625 11.3248 5.625 11.6665V14.3748H8.33333C8.675 14.3748 8.95833 14.6582 8.95833 14.9998C8.95833 15.3415 8.675 15.6248 8.33333 15.6248Z" fill="#081420"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="">
+                                                    <p class="selection__title">Радиус, дюйм</p>
+                                                    <p class="selection__info">-</p>
+                                                </div>
                                             </div>
-                                            <div class="">
-                                                <p class="selection__title">Радиус, дюйм</p>
-                                                <p class="selection__info">-</p>
-                                            </div>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
+                                            </svg>
                                         </div>
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
-                                        </svg>
+                                        <ul class="selection-info d-none">
+                                            <li class="selection-info-list">10</li>
+                                            <li class="selection-info-list">15</li>
+                                            <li class="selection-info-list">20</li>
+                                            <li class="selection-info-list">25</li>
+                                        </ul>
                                     </div>
-                                    <div class="selection d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="selection-icon">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.49984 18.3332H12.4998C16.6665 18.3332 18.3332 16.6665 18.3332 12.4998V7.49984C18.3332 3.33317 16.6665 1.6665 12.4998 1.6665H7.49984C3.33317 1.6665 1.6665 3.33317 1.6665 7.49984V12.4998C1.6665 16.6665 3.33317 18.3332 7.49984 18.3332Z" fill="#F2F3F5" stroke="#081420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" fill="#F2F3F5"/>
-                                                    <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" fill="#F2F3F5"/>
-                                                    <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                    <div class="selection">
+                                        <div class="selection__btn d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div class="selection-icon">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49984 18.3332H12.4998C16.6665 18.3332 18.3332 16.6665 18.3332 12.4998V7.49984C18.3332 3.33317 16.6665 1.6665 12.4998 1.6665H7.49984C3.33317 1.6665 1.6665 3.33317 1.6665 7.49984V12.4998C1.6665 16.6665 3.33317 18.3332 7.49984 18.3332Z" fill="#F2F3F5" stroke="#081420" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" fill="#F2F3F5"/>
+                                                        <path d="M7.9999 7.4751L5.9249 9.5501C5.68324 9.79176 5.68324 10.2001 5.9249 10.4418L7.9999 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" fill="#F2F3F5"/>
+                                                        <path d="M12 7.4751L14.075 9.5501C14.3167 9.79176 14.3167 10.2001 14.075 10.4418L12 12.5168" stroke="#081420" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="">
+                                                    <p class="selection__title">Производитель</p>
+                                                    <p class="selection__info">Nokian</p>
+                                                </div>
                                             </div>
-                                            <div class="">
-                                                <p class="selection__title">Производитель</p>
-                                                <p class="selection__info">Nokian</p>
-                                            </div>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
+                                            </svg>
                                         </div>
-                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.653377 -0.0675907 1.22061 -0.0953203 1.6129 0.209705L1.70711 0.292893L5 3.585L8.29289 0.292893C8.65338 -0.0675907 9.22061 -0.0953203 9.6129 0.209705L9.70711 0.292893C10.0676 0.653377 10.0953 1.22061 9.7903 1.6129L9.70711 1.70711L5.70711 5.70711C5.34662 6.06759 4.77939 6.09532 4.3871 5.7903L4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#AAAFBE"/>
-                                        </svg>
+                                        <ul class="selection-info d-none">
+                                            <li class="selection-info-list">Nokian</li>
+                                            <li class="selection-info-list">Michelin</li>
+                                            <li class="selection-info-list">Yokohama</li>
+                                            <li class="selection-info-list">Hankook</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -375,7 +409,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 g-2 g-sm-3">
                     <div class="suggestions-card">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="percentage">-23%</div>
@@ -405,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 g-2 g-sm-3">
                     <div class="suggestions-card">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="percentage">-23%</div>
@@ -435,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-6 d-none d-lg-flex">
+                <div class="col-lg-3 col-6 g-2 g-sm-3 d-none d-lg-flex">
                     <div class="suggestions-card">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="percentage">-23%</div>
@@ -465,7 +499,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-6 d-none d-lg-flex">
+                <div class="col-lg-3 col-6 g-2 g-sm-3 d-none d-lg-flex">
                     <div class="suggestions-card">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="percentage">-23%</div>
@@ -541,7 +575,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row tips-row">
+            <div class="row tips-row g-1">
                 <div class="col-lg-4">
                     <div class="tips-item">
                         <p class="tips-item__title">Как правильно подобрать шину</p>
@@ -560,7 +594,148 @@
             </div>
         </div>
     </div>
+    <!-- End tips -->
 
+    <div class="our-company d-none d-xl-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-company-item">
+                        <div class="header-logo">
+                            <img src="assets/img/png/logo.png" alt="logo">
+                            <span class="header-logo__text d-none d-xl-inline-block">wili</span>
+                        </div>
+                        <p class="our-company-item__text"> В компании «Wili» представлен широкий ассортимент шин для легковых и грузовых автомобилей, мотошин, диски, АКБ, масла, различные аксессуары и расходные материалы. В каталоге продукция от отечественных и зарубежных производителей, есть бюджетные варианты и автотовары премиум-класса.</p>
+                        <p class="our-company-item__text"> «Wili» — это магазин шин, в котором можно купить</p>
+                        <p class="our-company-item__text">Летние шины: для обеспечения надежного сцепления с сухой и мокрой дорогой при температуре не ниже +7°С.</p>
+                        <p class="our-company-item__text">Зимние шины: гарантируют хорошую управляемость и быстрое торможение при отрицательных температурах, не забиваются снегом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End our-company -->
+
+    <div class="brends d-none d-xl-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="brends-item">
+                        <img src="assets/img/png/b1.png" alt="" class="brends-item__img">
+                        <img src="assets/img/png/b2.png" alt="" class="brends-item__img">
+                        <img src="assets/img/png/b3.png" alt="" class="brends-item__img">
+                        <img src="assets/img/png/b4.png" alt="" class="brends-item__img">
+                        <img src="assets/img/png/b5.png" alt="" class="brends-item__img">
+                        <img src="assets/img/png/b6.png" alt="" class="brends-item__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End brends -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0 ps-5 ps-0">
+                    <p class="footer__title">Каталог</p>
+                    <ul class="ms-2 ms-sm-0">
+                        <li class="footer-list"><a href="#" class="footer-list__link">Шины</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Диски</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Аккумуляторы</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Автотовары</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0 ps-5 ps-0">
+                    <p class="footer__title">Покупателю</p>
+                    <ul class="ms-2 ms-sm-0">
+                        <li class="footer-list"><a href="#" class="footer-list__link">Как оплатить</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Как получить</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Гарантия</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Доставка</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Юридическим лицам</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0 ps-5 ps-0">
+                    <p class="footer__title">Компания</p>
+                    <ul class="ms-2 ms-sm-0">
+                        <li class="footer-list"><a href="#" class="footer-list__link">Контакты</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">О нас</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Новости</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list__link">Статьи</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0">
+                    <div class="text-center">
+                        <a href="tel:8 800 250 98 60" class="footer__phone">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67909 2.00503L6.63995 2.00245C5.21715 1.93667 3.32854 3.53762 2.60827 4.73252C1.81805 5.80288 1.80319 7.23088 2.47992 8.85088L2.58661 9.09531C4.30413 13.3032 10.7124 19.6692 14.9352 21.4261L15.172 21.5316C16.6655 22.1668 18.0377 22.1749 19.1601 21.4657L19.2882 21.3792L19.2499 21.4026C20.3749 20.7582 22.0502 18.8255 21.9988 17.3708C21.9474 16.7364 21.6618 16.2374 21.2253 15.7907C21.0823 15.6443 20.8919 15.4692 20.6721 15.2798L20.3225 14.987C20.2613 14.937 20.1988 14.8865 20.1353 14.8359L19.7447 14.5312C19.6784 14.4806 19.6116 14.4303 19.5446 14.3804L19.1433 14.0883C18.4788 13.6168 17.8545 13.2366 17.551 13.173C16.857 13.0291 16.393 13.1556 15.6887 13.5411L15.4319 13.6862C15.0368 13.9128 14.9425 13.9387 14.8266 13.8966C12.5926 12.9842 11.016 11.4081 10.0881 9.13758C10.0743 9.09833 10.0739 9.05503 10.1055 8.97194L10.1598 8.85084L10.2519 8.67782L10.347 8.51082C10.8192 7.69013 10.9841 7.20691 10.8275 6.45154C10.7829 6.23843 10.5835 5.86884 10.3062 5.43846L10.0513 5.0569C10.0062 4.99157 9.96004 4.92556 9.91292 4.85915L9.62103 4.45804C9.57115 4.39112 9.5208 4.32436 9.47021 4.25803L9.1656 3.8675C9.11494 3.80403 9.0645 3.74154 9.01449 3.68032L8.72141 3.3305L8.44951 3.02456C8.3636 2.93138 8.28301 2.84775 8.20955 2.77589C7.76327 2.33993 7.26485 2.0552 6.67909 2.00503ZM6.48505 4.00398L6.52518 4.00118L6.50843 3.99774C6.55663 4.00186 6.66699 4.06491 6.81151 4.20609L6.97024 4.37258L7.16319 4.59255L7.38076 4.85298L7.73233 5.29098L8.08537 5.74674L8.50245 6.30605L8.66643 6.53566L8.78792 6.71454C8.83644 6.78913 8.86543 6.83981 8.86949 6.85925C8.88412 6.92977 8.87509 7.00155 8.81388 7.13745L8.73422 7.29706L8.57968 7.57208C8.08256 8.43833 7.92116 9.02459 8.22205 9.85614C9.36789 12.6621 11.3393 14.6329 14.1076 15.7625C14.9131 16.0556 15.4768 15.9377 16.2457 15.5222L16.7239 15.2549C16.9564 15.1324 17.0502 15.1117 17.1429 15.1309L17.1723 15.1431L17.2872 15.2124L17.4659 15.334L17.8253 15.5929L18.4061 16.0311L19.0075 16.5048L19.409 16.8372L19.6286 17.0299C19.6936 17.0889 19.7497 17.1422 19.7946 17.1882C19.9359 17.3328 19.9991 17.4433 20.0029 17.4886C20.0172 17.9258 18.9336 19.2012 18.3528 19.6052L18.1705 19.7219C17.6541 20.0918 16.9405 20.1085 15.944 19.6863L15.7409 19.596C13.975 18.8609 11.7176 17.1605 9.65883 15.1753L9.10279 14.6273C7.08585 12.596 5.3303 10.3417 4.52627 8.54517L4.42259 8.30308C3.92861 7.2157 3.88648 6.4675 4.20291 5.94243L4.27095 5.84035C4.44135 5.5656 4.89511 5.06357 5.34639 4.68103C5.82458 4.27567 6.2559 4.03689 6.48505 4.00398Z" fill="#F42B55"/>
+                                <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1107 1.0062L13.994 1C13.4933 1.00246 13.063 1.3799 13.0063 1.88959C12.9453 2.4385 13.3408 2.93294 13.8897 2.99395C17.6309 3.40984 20.5858 6.36494 21.0064 10.1116C21.068 10.6605 21.5629 11.0554 22.1117 10.9938C22.6606 10.9322 23.0556 10.4374 22.9939 9.88852C22.4691 5.21361 18.7812 1.52539 14.1107 1.0062ZM14.1915 6.01855C13.6494 5.91289 13.1243 6.26668 13.0187 6.80876C12.913 7.35084 13.2668 7.87594 13.8089 7.9816C14.9271 8.19957 15.8007 9.07312 16.0187 10.1914C16.1243 10.7335 16.6494 11.0873 17.1915 10.9816C17.7336 10.8759 18.0874 10.3508 17.9817 9.80876C17.6079 7.89101 16.1093 6.39235 14.1915 6.01855Z" fill="#F42B55"/>
+                                </g>
+                            </svg>
+                            8 800 250 98 60</a>
+                            <form class="footer-form">
+                                <p class="footer-form__title">Подпишись на акции и скидки</p>
+                                <input type="text" class="footer-form__inp" placeholder="Введите E-mail" required>
+                                <button class="footer-form__btn" type="submit">Подписаться</button>
+                                <div>
+                                    <input type="checkbox" class="form-checkbox" id="checkbox">
+                                    <label class="form-label" for="checkbox">Я согласен с условиями передачи данных</label>
+                                  </div>
+                            </form>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center d-sm-none">
+                    <div class="footer-icon">
+                        <a href="#" class="icon">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.64951 8.5638C8.09224 5.75669 12.3881 3.9059 14.537 3.01142C20.6747 0.459883 21.9567 0.0167643 22.7811 0.000276131C23.0868 -0.00566646 23.3867 0.0844393 23.6385 0.257903C23.8152 0.410259 23.9278 0.623738 23.9538 0.855598C23.9982 1.14395 24.0106 1.43632 23.9909 1.72741C23.6591 5.23113 22.2184 13.6998 21.4868 17.6137C21.1776 19.2625 20.5676 19.8252 19.9761 19.8808C18.6941 19.9983 17.7089 19.0317 16.4723 18.2176C14.5267 16.9418 13.4282 16.1566 11.5403 14.9035C9.3577 13.4608 10.7736 12.6755 12.0164 11.3853C12.3421 11.0473 17.9934 5.90302 18.1047 5.43724C18.1193 5.36845 18.1176 5.29719 18.0997 5.22917C18.0818 5.16116 18.0482 5.09829 18.0016 5.04564C17.934 5.00336 17.8574 4.97743 17.7779 4.96992C17.6985 4.96241 17.6184 4.97352 17.5441 5.00236C17.3503 5.04496 14.2437 7.09841 8.22415 11.1627C7.34204 11.7687 6.54305 12.0641 5.82719 12.049C5.03782 12.0304 3.5209 11.6017 2.39147 11.2246C1.00853 10.7753 -0.0817423 10.5382 0.00482031 9.78185C0.0556587 9.38614 0.603885 8.98012 1.64951 8.5638Z" fill="#AAAFBE"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon">
+                            <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2485 17.4748C5.68262 17.4748 0.229508 10.9154 0 0H4.78984C4.9482 8.00984 8.48033 11.4043 11.278 12.1043V0H15.7925V6.9082C18.5466 6.61213 21.459 3.46557 22.4367 0H26.9511C26.1984 4.26656 23.0495 7.41541 20.8118 8.70984C22.562 9.57895 24.1077 10.8097 25.3468 12.3206C26.586 13.8316 27.4903 15.5883 28 17.4748H23.0334C21.9662 14.1515 19.3062 11.581 15.7925 11.2321V17.4748H15.2485Z" fill="#AAAFBE"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 24L1.68905 17.8345C0.382337 15.5655 -0.139362 12.9288 0.204829 10.3332C0.549021 7.73756 1.73987 5.32797 3.59277 3.47798C5.44567 1.62799 7.85713 0.440922 10.4533 0.100812C13.0495 -0.239298 15.6853 0.286544 17.9522 1.59682C20.2191 2.9071 21.9905 4.92862 22.9917 7.34799C23.9929 9.76736 24.1679 12.4494 23.4898 14.9784C22.8116 17.5074 21.3181 19.7421 19.2408 21.336C17.1635 22.9298 14.6183 23.7939 12 23.7942C10.0138 23.793 8.05958 23.2947 6.31544 22.3445L0 24ZM6.59955 20.1969L6.96198 20.4206C8.48597 21.3231 10.2244 21.7998 11.9955 21.8009C14.1889 21.8013 16.3201 21.0728 18.0543 19.73C19.7885 18.3871 21.0272 16.506 21.5757 14.3823C22.1243 12.2587 21.9515 10.013 21.0846 7.99827C20.2177 5.98354 18.7058 4.31403 16.7866 3.25221C14.8675 2.19039 12.6498 1.79647 10.4824 2.13238C8.31494 2.4683 6.32059 3.515 4.81286 5.10793C3.30513 6.70086 2.36952 8.74968 2.15313 10.9323C1.93675 13.1149 2.45185 15.3076 3.61746 17.1656L3.84117 17.5392L2.84116 21.1879L6.59955 20.1969Z" fill="#AAAFBE"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9931 14.7249C17.9193 14.5996 17.7202 14.5258 17.4227 14.3781C17.1251 14.2304 15.6643 13.5101 15.3914 13.4094C15.1184 13.3088 14.9216 13.2618 14.7202 13.5593C14.5189 13.8568 13.9529 14.5258 13.7806 14.7249C13.6084 14.924 13.4316 14.9486 13.1363 14.7987C12.2643 14.4485 11.4597 13.9497 10.7582 13.3244C10.1083 12.7232 9.55111 12.0288 9.105 11.264C8.9305 10.9665 9.08487 10.8166 9.23475 10.6577C9.38464 10.4989 9.53229 10.3088 9.68218 10.1365C9.80519 9.98644 9.90544 9.8191 9.97972 9.63985C10.0189 9.55766 10.0371 9.46707 10.0328 9.37614C10.0285 9.2852 10.0018 9.19673 9.9551 9.1186C9.88128 8.97095 9.28397 7.50786 9.03788 6.91278C8.7918 6.31771 8.55243 6.41166 8.36674 6.40048C8.18106 6.38929 7.99538 6.40048 7.79852 6.40048C7.64562 6.403 7.49494 6.43756 7.35622 6.50191C7.2175 6.56626 7.09381 6.65898 6.99314 6.77408C6.65951 7.09042 6.39488 7.47232 6.21586 7.8958C6.03685 8.31928 5.94732 8.7752 5.95288 9.23493C5.95288 10.698 7.01776 12.1119 7.16764 12.311C7.31753 12.5101 9.26384 15.5123 12.2459 16.7987C12.7996 17.0376 13.3657 17.2467 13.9417 17.4251C14.5482 17.6093 15.1892 17.6499 15.8142 17.5436C16.3846 17.4586 17.5725 16.8233 17.8276 16.1298C18.0826 15.4363 18.067 14.8479 17.9931 14.7249Z" fill="#AAAFBE"/>
+                             </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-sub">
+                        <p class="footer-sub__text">ООО «Вилли» - интернет-магазин шин и дисков <br>
+                            Copyright 2022 All rights reserved </p>
+                        <div class="footer-sub-icon d-none d-sm-flex">
+                            <a href="#" class="icon">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.64951 8.5638C8.09224 5.75669 12.3881 3.9059 14.537 3.01142C20.6747 0.459883 21.9567 0.0167643 22.7811 0.000276131C23.0868 -0.00566646 23.3867 0.0844393 23.6385 0.257903C23.8152 0.410259 23.9278 0.623738 23.9538 0.855598C23.9982 1.14395 24.0106 1.43632 23.9909 1.72741C23.6591 5.23113 22.2184 13.6998 21.4868 17.6137C21.1776 19.2625 20.5676 19.8252 19.9761 19.8808C18.6941 19.9983 17.7089 19.0317 16.4723 18.2176C14.5267 16.9418 13.4282 16.1566 11.5403 14.9035C9.3577 13.4608 10.7736 12.6755 12.0164 11.3853C12.3421 11.0473 17.9934 5.90302 18.1047 5.43724C18.1193 5.36845 18.1176 5.29719 18.0997 5.22917C18.0818 5.16116 18.0482 5.09829 18.0016 5.04564C17.934 5.00336 17.8574 4.97743 17.7779 4.96992C17.6985 4.96241 17.6184 4.97352 17.5441 5.00236C17.3503 5.04496 14.2437 7.09841 8.22415 11.1627C7.34204 11.7687 6.54305 12.0641 5.82719 12.049C5.03782 12.0304 3.5209 11.6017 2.39147 11.2246C1.00853 10.7753 -0.0817423 10.5382 0.00482031 9.78185C0.0556587 9.38614 0.603885 8.98012 1.64951 8.5638Z" fill="#AAAFBE"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon">
+                                <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.2485 17.4748C5.68262 17.4748 0.229508 10.9154 0 0H4.78984C4.9482 8.00984 8.48033 11.4043 11.278 12.1043V0H15.7925V6.9082C18.5466 6.61213 21.459 3.46557 22.4367 0H26.9511C26.1984 4.26656 23.0495 7.41541 20.8118 8.70984C22.562 9.57895 24.1077 10.8097 25.3468 12.3206C26.586 13.8316 27.4903 15.5883 28 17.4748H23.0334C21.9662 14.1515 19.3062 11.581 15.7925 11.2321V17.4748H15.2485Z" fill="#AAAFBE"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 24L1.68905 17.8345C0.382337 15.5655 -0.139362 12.9288 0.204829 10.3332C0.549021 7.73756 1.73987 5.32797 3.59277 3.47798C5.44567 1.62799 7.85713 0.440922 10.4533 0.100812C13.0495 -0.239298 15.6853 0.286544 17.9522 1.59682C20.2191 2.9071 21.9905 4.92862 22.9917 7.34799C23.9929 9.76736 24.1679 12.4494 23.4898 14.9784C22.8116 17.5074 21.3181 19.7421 19.2408 21.336C17.1635 22.9298 14.6183 23.7939 12 23.7942C10.0138 23.793 8.05958 23.2947 6.31544 22.3445L0 24ZM6.59955 20.1969L6.96198 20.4206C8.48597 21.3231 10.2244 21.7998 11.9955 21.8009C14.1889 21.8013 16.3201 21.0728 18.0543 19.73C19.7885 18.3871 21.0272 16.506 21.5757 14.3823C22.1243 12.2587 21.9515 10.013 21.0846 7.99827C20.2177 5.98354 18.7058 4.31403 16.7866 3.25221C14.8675 2.19039 12.6498 1.79647 10.4824 2.13238C8.31494 2.4683 6.32059 3.515 4.81286 5.10793C3.30513 6.70086 2.36952 8.74968 2.15313 10.9323C1.93675 13.1149 2.45185 15.3076 3.61746 17.1656L3.84117 17.5392L2.84116 21.1879L6.59955 20.1969Z" fill="#AAAFBE"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9931 14.7249C17.9193 14.5996 17.7202 14.5258 17.4227 14.3781C17.1251 14.2304 15.6643 13.5101 15.3914 13.4094C15.1184 13.3088 14.9216 13.2618 14.7202 13.5593C14.5189 13.8568 13.9529 14.5258 13.7806 14.7249C13.6084 14.924 13.4316 14.9486 13.1363 14.7987C12.2643 14.4485 11.4597 13.9497 10.7582 13.3244C10.1083 12.7232 9.55111 12.0288 9.105 11.264C8.9305 10.9665 9.08487 10.8166 9.23475 10.6577C9.38464 10.4989 9.53229 10.3088 9.68218 10.1365C9.80519 9.98644 9.90544 9.8191 9.97972 9.63985C10.0189 9.55766 10.0371 9.46707 10.0328 9.37614C10.0285 9.2852 10.0018 9.19673 9.9551 9.1186C9.88128 8.97095 9.28397 7.50786 9.03788 6.91278C8.7918 6.31771 8.55243 6.41166 8.36674 6.40048C8.18106 6.38929 7.99538 6.40048 7.79852 6.40048C7.64562 6.403 7.49494 6.43756 7.35622 6.50191C7.2175 6.56626 7.09381 6.65898 6.99314 6.77408C6.65951 7.09042 6.39488 7.47232 6.21586 7.8958C6.03685 8.31928 5.94732 8.7752 5.95288 9.23493C5.95288 10.698 7.01776 12.1119 7.16764 12.311C7.31753 12.5101 9.26384 15.5123 12.2459 16.7987C12.7996 17.0376 13.3657 17.2467 13.9417 17.4251C14.5482 17.6093 15.1892 17.6499 15.8142 17.5436C16.3846 17.4586 17.5725 16.8233 17.8276 16.1298C18.0826 15.4363 18.067 14.8479 17.9931 14.7249Z" fill="#AAAFBE"/>
+                                 </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="assets/js/plugin/jquery.js"></script>

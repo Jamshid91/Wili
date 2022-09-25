@@ -5,3 +5,10 @@ $gray: #AAAFBE;
 $gray-dark: #828282;
 $gray-light: #F2F3F5;
 $red: #F42B55;
+
+$--color-checkbox-border: lighten(blue, 20%);
+$--color-checkbox-bg: transparentize(red, .75);
+$--checkbox-width: 1.2rem;
+$--checkbox-height: 1.2rem;
+$--checkmark-width: .3em;
+$--checkmark-height: .56em;

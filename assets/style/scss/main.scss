@@ -44,8 +44,9 @@ input {
 
 .nav {
     background: $dark;
-    overflow-y: hidden;
     padding: 8px 0;
+    position: relative;
+    z-index: 25;
     &__location {
         font-weight: 600;
         font-size: 12px;
@@ -57,6 +58,7 @@ input {
         font-size: 12px;
         margin-right: 36px;
         position: relative;
+        z-index: 1000;
         &::before {
             content: '';
             width: 0;
@@ -90,7 +92,7 @@ input {
             white-space: nowrap;
             border-radius: 16px;
             transition: .3s all;
-            display: none;
+            z-index: 99;
             &-list {
                 &__link {
                     color: $gray;
@@ -111,10 +113,6 @@ input {
             &::before {
                 width: 0;
             }
-            &:hover .more {
-                // top: 100%;
-                display: flex;
-            }
         }
     }
 }
@@ -123,7 +121,6 @@ input {
     padding: 11px 0 17px;
     background: $white;
     box-shadow: 0px 0px 16px rgba(119, 124, 139, 0.3);
-    position: relative;
     &-logo {
         &__text {
             font-size: 24px;
@@ -133,8 +130,8 @@ input {
         }
     }
     &-search {
-        position: relative;
         margin: 0 50px 0 70px;
+        position: relative;
         &__inp {
             width: 426px;
             height: 46px;
@@ -204,6 +201,7 @@ input {
         box-shadow: 0px 0px 16px rgba(119, 124, 139, 0.3);
         border-radius: 16px 16px 24px 24px;
         padding: 19px 43px 28px 43px;
+        z-index: 999;
         &-list {
             padding: 18px;
             background: transparent;
@@ -477,11 +475,13 @@ input {
         }
         .selection {
             width: 23%;
+            height: 64px;
             padding: 13px 15px;
             border-radius: 24px;
             background: $gray-light;
             margin-top: 20px;
             cursor: pointer;
+            position: relative;
             &-icon {
                 width: 32px;
                 height: 32px;
@@ -510,6 +510,21 @@ input {
                 .selection-icon {
                     background: $gray-light;
                  }
+            }
+            &-info {
+                width: 100%;
+                background: $white;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.2);
+                position: relative;
+                z-index: 99;
+                &-list {
+                    padding: 5px 20px;
+                    &:hover {
+                        background: $gray-light;
+                    }
+                }
             }
         }
         &-search-box {
@@ -688,6 +703,180 @@ input {
         object-fit: cover;
         object-position: center;
         border-radius: 16px;
+    }
+}
+// End tips
+
+.our-company {
+    padding: 35px 0 50px;
+    &-item {
+        background: $white;
+        padding: 40px 58px 77px 58px;
+        box-shadow: 0px 0px 8px rgba(119, 124, 139, 0.05);
+        border-radius: 16px;
+        &__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 22px;
+        }
+    }
+}
+// End our-company
+
+.brends {
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+// End brends
+
+.footer {
+    background: $dark;
+    padding: 58px 0 34px;
+    margin-top: 52px;
+    color: $gray;
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    &-list {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__link {
+            font-size: 14px;
+            &:hover {
+                color: $white
+            }
+        }
+    }
+    &__phone {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &-form {
+        margin-top: 62px;
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: $white;
+        }
+        &__inp {
+            width: 253px;
+            height: 40px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #AAAFBE;
+            padding: 0 25px;
+            font-size: 12px;
+            color: $white;
+            margin-bottom: 12px;
+            &::placeholder {
+                font-size: 12px;
+                color: $white;
+            }
+        }
+        &__btn {
+            width: 128px;
+            height: 40px;
+            border-radius: 12px;
+            background: $red;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .form-checkbox {
+            border: 0;
+            clip: rect(1px,1px,1px,1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            width: 1px;
+          }
+          
+          .form-checkbox+.form-label:last-child {
+            font-size: 12px;
+            color: #AAAFBE;;
+          }
+          
+          .form-checkbox+.form-label {
+            color: #393a37;
+            padding-left: 30px;
+            position: relative;
+            vertical-align: baseline;
+            cursor: pointer;
+          }
+          
+          .form-checkbox+.form-label::before {
+            background-color: $red;
+            border-radius: 2px;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            left: 0;
+          }
+          
+          .form-checkbox+.form-label::after, .form-checkbox+.form-label::before {
+            content: "";
+            display: block;
+            position: absolute;
+            transition: all 50ms ease-out;
+          }
+          
+          .form-checkbox+.form-label::after {
+            background-image: url('../../img/svg/check\'.svg');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: rgba(26,99,162,.999);
+            content: "";
+            text-align: center;
+            height: 1.125rem;
+            width: 1.125rem;
+            top: .125rem;
+            left: 2px;
+            opacity: 0;
+            transform: scale(0);
+          }
+          
+          .form-checkbox:checked+.form-label::after {
+            opacity: 1;
+            transform: scale(1);
+          }
+    }
+    &-sub {
+        margin-top: 36px;
+        border-top: 1px solid #797C86;
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__text {
+            font-size: 12px;
+            line-height: 20px;
+            color: #AAAFBE;
+        }
+    }
+    &-icon {
+        margin-top: 40px;
+    }
+    .icon {
+        margin-right: 29px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            svg path {
+                fill: $red
+            }
+        }
     }
 }
 

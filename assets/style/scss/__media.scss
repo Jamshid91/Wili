@@ -64,6 +64,23 @@
           height: 300px;
         }
     }
+
+    
+   .header {
+    .catalog-info {
+        padding: 20px;
+        &-list {
+            padding: 10px;
+            &__img {
+                width: 180px;
+                height: 120px;
+            }
+            &__text {
+                margin-top: 20px;
+            }
+        }
+    }
+   }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +95,19 @@
         }
         &-basket {
             margin: 0 26px;
+        }
+        .catalog-info {
+            top: 20px;
+            &-list {
+                padding: 10px;
+                &__img {
+                    width: 180px;
+                    height: 120px;
+                }
+                &__text {
+                    margin-top: 20px;
+                }
+            }
         }
     }
     .wrapper {
@@ -220,6 +250,57 @@
         }
         &__img {
           height: 204px;
+          svg {
+            margin-right: 5px;
+          }
+        }
+    }
+
+    .footer {
+        padding: 60px 0 20px;
+        margin-top: 43px;
+        color: $gray;
+        &__phone {
+            color: $white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &-form {
+            margin-top: 34px;
+            &__title {
+                font-size: 16px;
+            }
+            &__inp {
+                width: 100%;
+            }
+            &__btn {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+        &-sub {
+            margin-top: 36px;
+            border-top: 1px solid #797C86;
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__text {
+                font-size: 12px;
+                line-height: 20px;
+                color: #AAAFBE;
+            }
+            .icon {
+                margin-right: 29px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    svg path {
+                        fill: $red
+                    }
+                }
+            }
         }
     }
 }
